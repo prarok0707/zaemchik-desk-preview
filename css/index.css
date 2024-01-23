@@ -1056,7 +1056,7 @@ body.no-scroll {
 .calc__remove-info {
     margin: 0 0 0.938rem 0;
     display: block;
-    font-size: 1rem;
+    font-size: 0.813rem;
     font-weight: 800;
     text-align: center;
     line-height: 1.5;
@@ -1066,6 +1066,12 @@ body.no-scroll {
 
 .calc__remove-info strong {
     color: var(--buttons-violet, #7b61ff);
+}
+
+@media (min-width: 330px) {
+    .calc__remove-info {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 576px) {
@@ -1089,7 +1095,7 @@ body.no-scroll {
 .calc__range.noUi-target {
     --height: 0.5rem;
     --border-radius: 0.5rem;
-    --handle-size: 1.875rem;
+    --handle-size: 2.5rem;
     --default-clr: var(--base-cristal-white, #fff);
     --active-clr: var(--buttons-violet, #7b61ff);
     height: var(--height);
