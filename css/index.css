@@ -1031,7 +1031,7 @@ body.no-scroll {
 
 .calc__label {
     display: block;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.364;
  /* 136.364% */
@@ -1093,9 +1093,9 @@ body.no-scroll {
 }
 
 .calc__range.noUi-target {
-    --height: 0.5rem;
+    --height: 0.625rem;
     --border-radius: 0.5rem;
-    --handle-size: 1.875rem;
+    --handle-size: 2.25rem;
     --default-clr: var(--base-cristal-white, #fff);
     --active-clr: var(--buttons-violet, #7b61ff);
     height: var(--height);
