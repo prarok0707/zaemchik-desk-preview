@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --max-width-wrapper: 1920px;
     --max-width-container: 1170px;
@@ -14,6 +16,7 @@
     --brandbook-more: #f22a52;
     --buttons-white: #ffffff;
     --buttons-green: #2dbe64;
+    --buttons-green-dark: #109347;
     --buttons-blue: #00a3ff;
     --buttons-red: #fe4928;
     --buttons-violet: #7b61ff;
@@ -739,4 +742,939 @@ body.no-scroll {
 .footer__text a {
     font-weight: 500;
     color: inherit;
+}
+
+.inputs {
+    --height: 2.5rem;
+    --pi: 0.813rem;
+    --fs: 1rem;
+    --lh: 1.357;
+    --border-radius: 0.313rem;
+    --icon-size: 0.75rem;
+    --clr: var(--gray-gray_60, #67677a);
+    --clr-placeholder: var(--gray-gray_50, #9393a3);
+    --clr-error: var(--brandbook-more, #f22a52);
+    --clr-input: var(--buttons-green, #2dbe64);
+    --border-clr: var(--gray-gray_30, #e6e6f0);
+    --bg: var(--base-cristal-white, #fff);
+    --icon-clr: var(--gray-gray_50, #9393a3);
+    --duration: 0.2s;
+}
+
+.inputs.error {
+    --border-clr: var(--clr-error);
+}
+
+.inputs__text {
+    padding: 0.75em 0 0 0;
+    display: block;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--gray-gray_40, #bcbccc);
+}
+
+/*
+<div class="inputs input">
+  <div class="input__wrapper">
+    <div class="input__icon">
+      <svg>
+        <use
+          href="../images/sprite.svg#calendar"
+          xlink:href="../images/sprite.svg#calendar"
+        ></use>
+      </svg>
+    </div>
+
+    <input class="input__target" type="text" placeholder="Дата выдачи" />
+
+    <!-- <span class="input__pass-toggle" data-visible-pass-btn>
+      <svg>
+        <use
+          href="../images/sprite.svg#eye"
+          xlink:href="../images/sprite.svg#eye"
+        ></use>
+      </svg>
+    </span> -->
+  </div>
+
+  <p class="inputs__text">Для получения договора и документов об оплате</p>
+</div>
+*/
+.input {
+    --offset-from-icon: calc(var(--pi) + var(--icon-size) + 0.375rem);
+}
+
+.input_password .input__target {
+    padding-right: var(--offset-from-icon);
+}
+
+.input__wrapper {
+    min-height: var(--height);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    background: var(--bg);
+    position: relative;
+}
+
+.input__icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    position: absolute;
+    top: 50%;
+    left: var(--pi);
+    transform: translate3d(0, -50%, 0);
+}
+
+.input__icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: none;
+    stroke: var(--icon-clr);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.input__icon + .input__target {
+    padding-left: var(--offset-from-icon);
+}
+
+.input__pass-toggle {
+    height: 100%;
+    padding: 0 var(--pi) 0 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translate3d(0, -50%, 0);
+}
+
+.input__pass-toggle svg {
+    flex: 0 0 var(--icon-size);
+    width: var(--icon-size);
+    height: var(--icon-size);
+    display: block;
+    fill: var(--gray-gray_50, #9393a3);
+    transition: fill var(--duration) linear;
+}
+
+@media (any-hover: hover) {
+    .input__pass-toggle:hover svg {
+        fill: var(--base-rich-black, #06101a);
+    }
+}
+
+.input__pass-toggle.active svg {
+    fill: var(--base-rich-black, #06101a);
+}
+
+.input__target {
+    width: 100%;
+    font-size: var(--fs);
+    font-weight: 500;
+    line-height: var(--lh);
+    color: var(--clr);
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+    border: 1px solid var(--border-clr);
+    background: none;
+    outline: none;
+    transition: border var(--duration) linear;
+}
+
+.input__target::-moz-placeholder {
+    color: var(--clr-placeholder);
+}
+
+.input__target::placeholder {
+    color: var(--clr-placeholder);
+}
+
+.input__target:focus {
+    --border-clr: var(--clr-input);
+}
+
+input.input__target {
+    flex: 1 1 100%;
+    height: 100%;
+    padding: 0 var(--pi);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    box-orient: vertical;
+}
+
+textarea.input__target {
+    flex: 1 1 5rem;
+    height: 5rem;
+    padding: 0.625rem var(--pi);
+    resize: none;
+}
+
+/*
+<div class="radio">
+  <div class="radio__wrapper">
+    <label class="radio__group">
+      <input checked class="radio__input" type="radio" name="sex" value="male" />
+
+      <div class="radio__content">
+        <div class="radio__icon"></div>
+        <span class="radio__text">Я мужчина</span>
+      </div>
+    </label>
+
+    <label class="radio__group">
+      <input class="radio__input" type="radio" name="sex" value="female" />
+
+      <div class="radio__content">
+        <div class="radio__icon"></div>
+        <span class="radio__text">Я женщина</span>
+      </div>
+    </label>
+  </div>
+</div>
+*/
+.radio {
+    --check: var(--buttons-green-dark);
+    --clr: var(--base-rich-black, #06101a);
+    --bg: var(--base-cristal-white, #fff);
+}
+
+.radio__wrapper {
+    display: flex;
+    gap: 0.313rem 0.813rem;
+    flex-wrap: wrap;
+}
+
+.radio__group {
+    display: block;
+    cursor: pointer;
+}
+
+@media (any-hover: hover) {
+    .radio__group:hover .radio__icon {
+        border-color: var(--check);
+    }
+}
+
+.radio__input {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    position: fixed;
+    top: -100%;
+    left: -100%;
+    z-index: -999;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.radio__input:checked + .radio__content .radio__icon {
+    background: transparent;
+    border-color: var(--check);
+}
+
+.radio__input:checked + .radio__content .radio__icon::before {
+    background: var(--check);
+    transform: scale(1);
+}
+
+.radio__input:checked + .radio__content .radio__text {
+    color: var(--check);
+}
+
+.radio__content {
+    display: flex;
+    align-items: center;
+}
+
+.radio__icon {
+    flex: 0 0 1.125rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin: 0 0.625rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 1px solid var(--bg);
+    transition: background 0.2s linear, border 0.2s linear;
+}
+
+.radio__icon::before {
+    content: "";
+    flex: 0 0 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: inherit;
+    transform: scale(0);
+    transition: background 0.2s linear, transform 0.2s linear;
+}
+
+.radio__text {
+    display: block;
+    font-family: "Golos Text";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.357;
+    color: var(--clr);
+    transition: color 0.2s linear;
+}
+
+/*
+<div class="checkbox">
+  <div class="checkbox__wrapper">
+    <label class="checkbox__label">
+      <input class="checkbox__input" type="checkbox" />
+      <div class="checkbox__icon">
+        <svg>
+          <use
+            href="../images/sprite.svg#check"
+            xlink:href="../images/sprite.svg#check"
+          ></use>
+        </svg>
+      </div>
+
+      <p class="checkbox__text">
+        Я ознакомлен и согласен со <span>следующим</span>
+      </p>
+    </label>
+  </div>
+</div>
+*/
+.checkbox__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.313rem 0.938rem;
+}
+
+.checkbox__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (any-hover: hover) {
+    .checkbox__label:hover .checkbox__icon {
+        background: var(--buttons-violet, #7b61ff);
+        border-color: var(--buttons-violet, #7b61ff);
+    }
+}
+
+.checkbox__input {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    position: fixed;
+    top: -100%;
+    left: -100%;
+    z-index: -999;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.checkbox__input:checked + .checkbox__icon {
+    background: var(--buttons-violet, #7b61ff);
+    border-color: var(--buttons-violet, #7b61ff);
+}
+
+.checkbox__input:checked + .checkbox__icon svg {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.checkbox__icon {
+    flex: 0 0 1rem;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.125rem solid var(--base-cristal-white, #fff);
+    border-radius: 0.25rem;
+    background: transparent;
+    transition: background 0.2s linear, border 0.2s linear;
+}
+
+.checkbox__icon svg {
+    flex: 0 0 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    fill: none;
+    stroke: var(--base-cristal-white, #fff);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-property: opacity, visibility, transform;
+    transition-duration: 0.2s;
+}
+
+@media (min-width: 576px) {
+    .checkbox__icon {
+        flex: 0 0 1.125rem;
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+
+    .checkbox__icon svg {
+        flex: 0 0 0.625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+    }
+}
+
+.checkbox__text {
+    padding: 0 0 0 0.625rem;
+    display: block;
+    font-family: "Golos Text";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.417;
+    color: var(--gray-gray_50, #9393a3);
+}
+
+.checkbox__text a {
+    color: inherit;
+}
+
+.checkbox__text span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (any-hover: hover) {
+    .checkbox__text span:hover {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .checkbox__text {
+        font-size: 0.875rem;
+    }
+}
+
+/*
+<div class="inputs select">
+  <div class="select__wrapper">
+    <select data-select>
+      <option value="Санкт-Петербург">Санкт-Петербург</option>
+      <option value="Москва">Москва</option>
+      <option value="Екатеренбург">Екатеренбург</option>
+    </select>
+
+    <div class="select__icon">
+      <svg>
+        <use
+          href="../images/sprite.svg#drop"
+          xlink:href="../images/sprite.svg#drop"
+        ></use>
+      </svg>
+    </div>
+  </div>
+</div>
+*/
+.select__icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    position: absolute;
+    top: 50%;
+    right: var(--pi);
+    transform: translate3d(0, -50%, 0);
+    transition: transform var(--duration) linear;
+    pointer-events: none;
+}
+
+.select__icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: none;
+    stroke: var(--icon-clr);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.select .select__wrapper {
+    position: relative;
+}
+
+.select .select__wrapper .select2-container {
+    display: block;
+}
+
+.select .select__wrapper .select2-selection {
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    background-color: var(--bg);
+    border: 1px solid var(--border-clr);
+    border-radius: var(--border-radius);
+    transition: border-color var(--duration) linear;
+}
+
+.select .select__wrapper .select2-container .select2-selection__rendered {
+    padding-right: calc(var(--icon-size) + var(--pi) + 0.375rem);
+    padding-left: var(--pi);
+    font-size: var(--fs);
+    font-weight: 500;
+    line-height: var(--lh);
+    color: var(--clr-placeholder);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    box-orient: vertical;
+    transition: color var(--duration) linear;
+}
+
+.select .select__wrapper .select2-selection__arrow {
+    display: none;
+}
+
+.select .select__wrapper.active .select2-selection {
+    border-color: var(--clr-input);
+}
+
+.select .select__wrapper.active .select2-container .select2-selection__rendered {
+    color: var(--clr);
+}
+
+.select .select__wrapper.active .select__icon {
+    transform: translate3d(0, -50%, 0) scale(-1);
+}
+
+.select__dropdown.select2-dropdown {
+    padding: 0 var(--pi);
+    background: var(--bg);
+    border-color: var(--clr-input);
+    border-radius: var(--border-radius);
+    z-index: 99;
+}
+
+.select__dropdown.select2-dropdown--below {
+    transform: translate3d(0, -1px, 0);
+    box-shadow: 0px 17px 15px -25px rgba(0, 0, 0, 0.6);
+}
+
+.select__dropdown.select2-dropdown--below .select2-results {
+    border-top: 1px solid var(--border-clr);
+}
+
+.select__dropdown.select2-dropdown--above {
+    transform: translate3d(0, 1px, 0);
+    box-shadow: 0px -17px 15px -25px rgba(0, 0, 0, 0.6);
+}
+
+.select__dropdown.select2-dropdown--above .select2-results {
+    border-bottom: 1px solid var(--border-clr);
+}
+
+.select__dropdown.select2-dropdown .select2-search {
+    display: none;
+}
+
+.select__dropdown.select2-dropdown .select2-results {
+    padding: 0.313rem 0;
+}
+
+.select__dropdown.select2-dropdown .select2-results__option {
+    padding: 0.313rem 0;
+    display: block;
+    font-size: var(--fs);
+    font-weight: 500;
+    line-height: var(--lh);
+    color: var(--clr-placeholder) !important;
+    background: none !important;
+    transition: color var(--duration) linear;
+}
+
+.select__dropdown.select2-dropdown .select2-results__option--selected {
+    color: var(--clr-input) !important;
+}
+
+@media (any-hover: hover) {
+    .select__dropdown.select2-dropdown .select2-results__option:hover {
+        color: var(--clr) !important;
+    }
+}
+
+.title {
+    display: block;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.333;
+ /* 133.333% */
+    color: var(--buttons-violet, #7b61ff);
+}
+
+@media (min-width: 992px) {
+    .title {
+        font-size: 1.875rem;
+    }
+}
+
+.autocomplete-suggestions {
+    padding: 0.5rem var(--pi);
+    overflow: auto;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-clr);
+    background: var(--bg);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0, 0.313rem, 0);
+}
+
+.autocomplete-suggestion {
+    padding: 0.375rem 0;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+ /* 136.364% */
+    color: var(--clr-placeholder);
+    transition: color var(--duration) linear;
+}
+
+@media (any-hover: hover) {
+    .autocomplete-suggestion:hover {
+        color: var(--clr);
+    }
+}
+
+.autocomplete-suggestions strong {
+    color: var(--clr);
+}
+
+.autocomplete-group {
+    padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+    display: block;
+    border-bottom: 1px solid #000;
+}
+
+/*
+<div class="autocomplete-suggestions">
+    <div class="autocomplete-group"><strong>NHL</strong></div>
+    <div class="autocomplete-suggestion autocomplete-selected">...</div>
+    <div class="autocomplete-suggestion">...</div>
+    <div class="autocomplete-suggestion">...</div>
+</div>
+*/
+.insides {
+    padding: 0 0 2.188rem 0;
+}
+
+@media (min-width: 576px) {
+    .insides {
+        padding: 0 0 3.75rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .insides {
+        padding: 0 0 5rem 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .insides {
+        padding: 0 0 6.25rem 0;
+    }
+}
+
+.insides__wrapper {
+    padding: 1.25rem 0;
+    border-radius: var(--main-br);
+    background: var(--gray-gray_10, #eaf0e6);
+}
+
+@media (min-width: 576px) {
+    .insides__wrapper {
+        padding: 1.875rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .insides__wrapper {
+        padding: 3.125rem 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .insides__wrapper {
+        padding: 3.75rem 0;
+    }
+}
+
+.insides__body {
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .insides__body {
+        padding: 1.25rem;
+        border-radius: var(--main-br);
+        border: 0.25rem solid var(--base-cristal-white, #fff);
+    }
+}
+
+@media (min-width: 992px) {
+    .insides__body {
+        padding: 1.875rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .insides__body {
+        padding: 2.625rem;
+        border-width: 0.5rem;
+    }
+}
+
+.contacts-info {
+    --gap: 0.625rem;
+}
+
+.contacts-info__wrapper {
+    max-width: 37.5rem;
+}
+
+@media (min-width: 992px) {
+    .contacts-info__wrapper {
+        max-width: 49.375rem;
+    }
+}
+
+.contacts-info__title {
+    margin: 0 0 1.25rem 0;
+}
+
+@media (min-width: 992px) {
+    .contacts-info__title {
+        margin: 0 0 1.875rem 0;
+    }
+}
+
+.contacts-info__form {
+    display: grid;
+    gap: var(--gap);
+}
+
+.contacts-info__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+    gap: var(--gap);
+}
+
+.popup-layout {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: calc(var(--zIndex) + 1);
+    background: var(--base-rich-black, #06101a);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.popup-layout.active {
+    opacity: 0.9;
+    visibility: visible;
+}
+
+.popup {
+    --button-close-size: 20px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: calc(var(--zIndex) + 2);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.popup.active .popup__body {
+    transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+    .popup {
+        --button-close-size: 25px;
+    }
+}
+
+.popup__wrapper {
+    min-height: 100%;
+    padding: 1.875rem var(--container-pi);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__body {
+    width: 100%;
+    max-width: 26.875rem;
+    padding: 1.875rem 1.25rem;
+    position: relative;
+    transform: translate3d(0, -20px, 0);
+    transition: transform 0.2s linear;
+    border-radius: var(--main-br);
+    background: var(--base-cristal-white, #fff);
+}
+
+@media (min-width: 768px) {
+    .popup__body {
+        max-width: 31.25rem;
+        padding: 1.875rem 1.875rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .popup__body {
+        padding: 1.875rem 3.125rem;
+    }
+}
+
+.popup__close {
+    width: var(--button-close-size);
+    height: var(--button-close-size);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.popup__close svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: var(--gray-gray_60, #67677a);
+    transition: fill 0.15s linear;
+}
+
+@media (any-hover: hover) {
+    .popup__close:hover svg {
+        fill: var(--brandbook-more, #f22a52);
+    }
+}
+
+@media (min-width: 768px) {
+    .popup__close {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+.popup__title {
+    padding: 0 var(--button-close-size) 0 0;
+}
+
+@media (min-width: 992px) {
+    .popup__title {
+        margin: 0 0 0.625rem 0;
+    }
+}
+
+.popup__text {
+    margin: 0 0 30px 0;
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.3;
+    color: var(--base-rich-black, #06101a);
+}
+
+.popup__text a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+@media (any-hover: hover) {
+    .popup__text a:hover {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .popup__text {
+        font-size: 1rem;
+    }
+}
+
+.popup__actions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.popup__cancel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.25rem;
+ /* 125% */
+    text-decoration: underline;
+    color: var(--base-rich-black, #06101a);
+}
+
+@media (any-hover: hover) {
+    .popup__cancel:hover {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .popup__cancel {
+        font-size: 1rem;
+    }
 }

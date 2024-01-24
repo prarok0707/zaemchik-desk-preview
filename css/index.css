@@ -14,6 +14,7 @@
     --brandbook-more: #f22a52;
     --buttons-white: #ffffff;
     --buttons-green: #2dbe64;
+    --buttons-green-dark: #109347;
     --buttons-blue: #00a3ff;
     --buttons-red: #fe4928;
     --buttons-violet: #7b61ff;
@@ -1094,7 +1095,7 @@ body.no-scroll {
 
 .calc__range.noUi-target {
     --height: 0.625rem;
-    --border-radius: 0.5rem;
+    --border-radius: 0.625rem;
     --handle-size: 2.5rem;
     --default-clr: var(--base-cristal-white, #fff);
     --active-clr: var(--buttons-violet, #7b61ff);
