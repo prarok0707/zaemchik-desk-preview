@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --max-width-wrapper: 1920px;
     --max-width-container: 1170px;
@@ -30,6 +32,7 @@
     --tech-sky: #00a3ff;
     --tech-greentekila: #0ff14e;
     --tech-barbie: #ff00a8;
+    --dark-clr: #1e2f37;
     --buttons-Linear: linear-gradient(90deg, #2dbe64 0%, #90be2d 100%);
     --zIndex: 999;
 }
@@ -267,6 +270,97 @@ body.no-scroll {
     display: block;
     fill: currentColor;
     transition: fill var(--duration) linear;
+}
+
+/*
+<button class="button-secondary" type="button">
+  <span class="button-secondary__text">Показать ещё варианты</span>
+
+  <svg>
+    <use
+      href="../images/sprite.svg#arrow"
+      xlink:href="../images/sprite.svg#arrow"
+    ></use>
+  </svg>
+</button>
+*/
+.button-secondary {
+    --height: 3rem;
+    --fs: 1rem;
+    --pb: 0.625rem;
+    --pi: 0.938rem;
+    --border-radius: 0.5em;
+    --icon-size: 0.75em;
+    --border-width: 0.063rem;
+    --clr: var(--buttons-green, #2dbe64);
+    --bg: var(--dark-clr, #1e2f37);
+    --border-clr: var(--buttons-Linear);
+    --duration: 0.2s;
+    width: 100%;
+    min-height: var(--height);
+    padding: var(--pb) var(--pi);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 0.625rem;
+    cursor: pointer;
+    font-size: var(--fs);
+    font-style: normal;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.5;
+ /* 150% */
+    color: var(--clr);
+    border-radius: var(--border-radius);
+    background: var(--border-clr);
+    background-size: 100% 100%;
+    background-position: top right;
+    transition-property: color, background;
+    transition-duration: var(--duration);
+    outline: none;
+    position: relative;
+}
+
+.button-secondary::after {
+    content: "";
+    position: absolute;
+    top: var(--border-width);
+    right: var(--border-width);
+    bottom: var(--border-width);
+    left: var(--border-width);
+    border-radius: inherit;
+    background: var(--bg);
+    transition-property: opacity, visibility;
+    transition-duration: var(--duration);
+}
+
+@media (any-hover: hover) {
+    .button-secondary:hover {
+        --clr: var(--base-cristal-white, #fff);
+        background-size: 200% 100%;
+    }
+
+    .button-secondary:hover::after {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.button-secondary svg {
+    flex: 0 0 var(--icon-size);
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin: 0 0 0 auto;
+    display: block;
+    fill: currentColor;
+    transition: fill var(--duration) linear;
+    position: relative;
+    z-index: 1;
+}
+
+.button-secondary__text {
+    position: relative;
+    z-index: 1;
 }
 
 .wrapper {
