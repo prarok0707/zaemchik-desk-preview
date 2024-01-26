@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <title>Профиль</title>
+    <link rel="stylesheet" href="./css/profile.min.css" />
+  </head>
+  <body>
+    <div class="wrapper" data-tab="profile">
+      <header class="header" data-menu>
+        <div class="container">
+          <div class="header__wrapper">
+            <a class="header__logo" href="./index.html"
+              ><img src="./images/header/logo_01.svg" alt="logo" /> </a
+            ><button
+              class="header__button button-secondary"
+              type="button"
+              data-tab-button="offers"
+            >
+              <span class="button-secondary__text">Мои предложения</span>
+            </button>
+            <div class="header__actions">
+              <div class="header__actions-wrapper">
+                <div class="header__actions-items">
+                  <div class="header__action active" data-tab-button="scoring">
+                    <div class="header__action-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.6316 8.68421C13.6316 9.93335 13.2612 11.1544 12.5672 12.1931C11.8732 13.2317 10.8868 14.0412 9.73274 14.5192C8.57868 14.9973 7.30878 15.1223 6.08364 14.8786C4.8585 14.6349 3.73313 14.0334 2.84985 13.1501C1.96658 12.2669 1.36505 11.1415 1.12136 9.91636C0.877663 8.69122 1.00274 7.42132 1.48076 6.26726C1.95879 5.1132 2.7683 4.12681 3.80693 3.43282C4.84555 2.73883 6.06665 2.36842 7.31579 2.36842V8.68421H13.6316Z"
+                          stroke="#7B61FF"
+                        />
+                        <path
+                          d="M9.84211 1C10.5195 1 11.1902 1.13341 11.8159 1.39262C12.4417 1.65183 13.0103 2.03176 13.4893 2.51071C13.9682 2.98967 14.3482 3.55827 14.6074 4.18405C14.8666 4.80984 15 5.48055 15 6.15789H9.84211L9.84211 1Z"
+                          stroke="#7B61FF"
+                        />
+                      </svg>
+                    </div>
+                    <span>Скоринг</span>
+                  </div>
+                  <div
+                    class="header__action"
+                    data-tab-button="profile-settings"
+                  >
+                    <div class="header__action-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <circle
+                          cx="7.94164"
+                          cy="7.94066"
+                          r="7.12425"
+                          stroke="#7B61FF"
+                        />
+                        <circle
+                          cx="7.94162"
+                          cy="6.79611"
+                          r="2.55002"
+                          stroke="#7B61FF"
+                        />
+                        <path
+                          d="M12.4733 13.8773C12.4733 11.3746 10.4445 9.3457 7.94175 9.3457C5.43902 9.3457 3.41016 11.3746 3.41016 13.8773"
+                          stroke="#7B61FF"
+                        />
+                      </svg>
+                    </div>
+                    <span>Профиль</span>
+                  </div>
+                  <div class="header__action" data-tab-button="events">
+                    <div class="header__action-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.03223 1.12891V0.628906C0.756084 0.628906 0.532227 0.852764 0.532227 1.12891H1.03223ZM15.0322 1.12891H15.5322C15.5322 0.852764 15.3084 0.628906 15.0322 0.628906V1.12891ZM15.0322 11.4769V11.9769C15.3084 11.9769 15.5322 11.753 15.5322 11.4769H15.0322ZM4.05311 11.4769V10.9769C3.94325 10.9769 3.83645 11.0131 3.74921 11.0798L4.05311 11.4769ZM1.03223 13.7891H0.532227V14.8015L1.33613 14.1861L1.03223 13.7891ZM1.03223 1.62891H15.0322V0.628906H1.03223V1.62891ZM14.5322 1.12891V11.4769H15.5322V1.12891H14.5322ZM15.0322 10.9769H4.05311V11.9769H15.0322V10.9769ZM3.74921 11.0798L0.728325 13.3921L1.33613 14.1861L4.35701 11.8739L3.74921 11.0798ZM1.53223 13.7891V1.12891H0.532227V13.7891H1.53223Z"
+                          fill="#7B61FF"
+                        />
+                      </svg>
+                    </div>
+                    <span>Лента событий</span>
+                  </div>
+                  <div class="header__action" data-tab-button="subscription">
+                    <div class="header__action-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M10.2648 1.12138L4.52182 8.21305C4.35079 8.42425 4.5011 8.73939 4.77287 8.73939H6.31406C6.52606 8.73939 6.68059 8.94015 6.62634 9.14509L5.18435 14.5926C5.0951 14.9298 5.52959 15.1495 5.74828 14.8778L11.4793 7.75746C11.6494 7.54611 11.499 7.23188 11.2277 7.23188H9.73551C9.52419 7.23188 9.36978 7.03233 9.42281 6.82777L10.8285 1.40575C10.9157 1.06952 10.4834 0.851449 10.2648 1.12138Z"
+                          stroke="#7B61FF"
+                        />
+                      </svg>
+                    </div>
+                    <span>Подписка</span>
+                  </div>
+                  <div class="header__action" data-tab-button="newsletter">
+                    <div class="header__action-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.82466 6.30644L8 9.6676L12.305 6.30644M2.6391 13.6676H13.3609C14.2662 13.6676 15 12.9338 15 12.0285V4.80316C15 3.89791 14.2661 3.16406 13.3609 3.16406H2.6391C1.73385 3.16406 1 3.89791 1 4.80316L1 12.0285C1 12.9338 1.73385 13.6676 2.6391 13.6676Z"
+                          stroke="#7B61FF"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <span>Рассылка</span>
+                  </div>
+                  <div class="header__action" data-tab-button="documents">
+                    <div class="header__action-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.5 5H11.5M4.5 8H8M4.93236 12.7471L7.50386 14.2165C7.81129 14.3922 8.18871 14.3922 8.49614 14.2165L11.0676 12.7471C11.3399 12.5915 11.6694 12.5726 11.9577 12.6962L13.6061 13.4026C14.2659 13.6854 15 13.2014 15 12.4835V2C15 1.44772 14.5523 1 14 1H2C1.44772 1 1 1.44772 1 2V12.4835C1 13.2014 1.73405 13.6854 2.39392 13.4026L4.0423 12.6962C4.33055 12.5726 4.66006 12.5915 4.93236 12.7471Z"
+                          stroke="#7B61FF"
+                        />
+                      </svg>
+                    </div>
+                    <span>Документы</span>
+                  </div>
+                  <div class="header__action" data-tab-button="feedback">
+                    <div class="header__action-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M2.1452 11.1061L11.7846 1.45698C12.3933 0.847674 13.3802 0.847675 13.9888 1.45698L14.5435 2.01219C15.1522 2.62149 15.1522 3.60936 14.5435 4.21866L13.5462 5.21697M2.1452 11.1061L1 15L4.90409 13.8678M2.1452 11.1061C3.68162 11.2777 4.73749 12.3021 4.90409 13.8678M4.90409 13.8678L13.5462 5.21697M13.5462 5.21697L14.289 5.96052C14.289 5.96052 14.9956 6.63533 14.289 7.34266L11.0808 10.5541"
+                          stroke="#7B61FF"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <span>Обратная связь</span>
+                  </div>
+                  <div class="header__action" data-tab-button="about">
+                    <div class="header__action-icon">
+                      <svg
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.06494 1H1"
+                          stroke="#7B61FF"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M15.4075 1H5.06494"
+                          stroke="#7B61FF"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M1.06494 8H1"
+                          stroke="#7B61FF"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M15.4075 8H5.06494"
+                          stroke="#7B61FF"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M1.06494 15H1"
+                          stroke="#7B61FF"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M15.4075 15H5.06494"
+                          stroke="#7B61FF"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <span>О сервисе</span>
+                  </div>
+                </div>
+                <button
+                  class="header__button button-secondary"
+                  type="button"
+                  data-tab-button="offers"
+                >
+                  <span class="button-secondary__text">Мои предложения</span>
+                </button>
+              </div>
+            </div>
+            <a class="header__user" href="#"
+              ><div class="header__img">
+                <svg>
+                  <use
+                    href="./images/sprite.svg#user"
+                    xlink:href="./images/sprite.svg#user"
+                  ></use>
+                </svg>
+                <img src="./images/header/img_01.png" alt="img" />
+              </div>
+              <span>Выйти</span> </a
+            ><button class="header__menu-button" type="button" data-menu-toggle>
+              <svg class="header__icon-menu">
+                <use
+                  href="./images/sprite.svg#menu"
+                  xlink:href="./images/sprite.svg#menu"
+                ></use>
+              </svg>
+              <svg class="header__icon-close">
+                <use
+                  href="./images/sprite.svg#close"
+                  xlink:href="./images/sprite.svg#close"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <div class="profile">
+          <div class="profile__wrapper">
+            <div class="container">
+              <div class="profile__body">
+                <div
+                  class="profile__scoring scoring active"
+                  data-tab-body="scoring"
+                >
+                  <div class="scoring__wrapper">
+                    <h2 class="scoring__title title">Скоринг</h2>
+                    <span class="scoring__subtitle"
+                      >Сайт рыбатекст поможет дизайнеру, верстальщику,
+                      вебмастеру сгенерировать несколько абзацев.</span
+                    >
+                    <div class="scoring__body">
+                      <div class="scoring__progress">
+                        <div
+                          class="scoring__progress-item"
+                          style="--scoring-progress: 100%"
+                        >
+                          <div class="scoring__progress-line"></div>
+                          <div class="scoring__text">0 баллов</div>
+                        </div>
+                        <div
+                          class="scoring__progress-item"
+                          style="--scoring-progress: 44%"
+                        >
+                          <div class="scoring__current">
+                            <div class="scoring__current-wrapper">
+                              <span class="scoring__text">У Вас</span>
+                              <span>350 баллов</span>
+                            </div>
+                          </div>
+                          <div class="scoring__progress-line"></div>
+                          <div class="scoring__text">
+                            500 баллов, <span>хороший уровень</span>
+                          </div>
+                        </div>
+                        <div class="scoring__progress-item">
+                          <div
+                            class="scoring__current scoring__current_left"
+                          ></div>
+                          <div class="scoring__progress-line"></div>
+                          <div class="scoring__text">
+                            500 баллов,
+                            <span style="color: #f7971d"
+                              >достаточный уровень</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="scoring__progress-item"
+                          style="--scoring-progress: 31%"
+                        >
+                          <div class="scoring__current scoring__current_left">
+                            <div class="scoring__current-wrapper">
+                              <span class="scoring__text">ОБРАЗЕЦ</span>
+                              <span>350 баллов</span>
+                            </div>
+                          </div>
+                          <div class="scoring__progress-line"></div>
+                          <div class="scoring__text">
+                            500 баллов,
+                            <span style="color: #2dbe64">высокий уровень</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="scoring__features">
+                      <li class="scoring__feature">
+                        <div class="scoring__feature-icon">
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#check"
+                              xlink:href="./images/sprite.svg#check"
+                            ></use>
+                          </svg>
+                        </div>
+                        <p class="scoring__feature-label">Кредит за 10 минут</p>
+                      </li>
+                      <li class="scoring__feature">
+                        <div class="scoring__feature-icon">
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#check"
+                              xlink:href="./images/sprite.svg#check"
+                            ></use>
+                          </svg>
+                        </div>
+                        <p class="scoring__feature-label">
+                          Моментальные кредиты
+                        </p>
+                      </li>
+                      <li class="scoring__feature">
+                        <div class="scoring__feature-icon">
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#check"
+                              xlink:href="./images/sprite.svg#check"
+                            ></use>
+                          </svg>
+                        </div>
+                        <p class="scoring__feature-label">Гибкие условия</p>
+                      </li>
+                      <li class="scoring__feature">
+                        <div class="scoring__feature-icon">
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#check"
+                              xlink:href="./images/sprite.svg#check"
+                            ></use>
+                          </svg>
+                        </div>
+                        <p class="scoring__feature-label">
+                          Еженедельные выплаты
+                        </p>
+                      </li>
+                      <li class="scoring__feature">
+                        <div class="scoring__feature-icon">
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#check"
+                              xlink:href="./images/sprite.svg#check"
+                            ></use>
+                          </svg>
+                        </div>
+                        <p class="scoring__feature-label">
+                          Возможность переоценки скоринга
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="profile__settings profile-settings"
+                  data-tab-body="profile-settings"
+                  style="display: none"
+                >
+                  <div class="profile-settings__wrapper">
+                    <h2 class="profile-settings__title title">Профиль</h2>
+                    <div class="profile-settings__groups">
+                      <div class="profile-settings__group" data-toggle-card>
+                        <div class="profile-settings__head">
+                          <span class="profile-settings__label"
+                            >Личные данные</span
+                          >
+                          <div class="profile-settings__edit" data-toggle-btn>
+                            <span>Изменить</span>
+                            <svg class="profile-settings__icon-pen">
+                              <use
+                                href="./images/sprite.svg#pen"
+                                xlink:href="./images/sprite.svg#pen"
+                              ></use>
+                            </svg>
+                            <svg class="profile-settings__icon-cross">
+                              <use
+                                href="./images/sprite.svg#cross"
+                                xlink:href="./images/sprite.svg#cross"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          class="profile-settings__current active"
+                          data-toggle-current
+                        >
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >ФИО</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >Никитин Богдан Сергеевич</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Дата рождения</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >25.10.1995</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Телефон</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >+ 7 495 345 67 89</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Телефон</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >customersmail@gmail.com</span
+                            >
+                          </div>
+                        </div>
+                        <form
+                          class="profile-settings__form"
+                          data-toggle-edit
+                          style="display: none"
+                        >
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="Никитин Богдан Сергеевич"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="25.10.1995"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="+ 7 495 345 67 89"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="customersmail@gmail.com"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="profile-settings__submit button"
+                            type="submit"
+                          >
+                            Сохранить
+                          </button>
+                        </form>
+                      </div>
+                      <div class="profile-settings__group" data-toggle-card>
+                        <div class="profile-settings__head">
+                          <span class="profile-settings__label"
+                            >Паспортные данные</span
+                          >
+                          <div class="profile-settings__edit" data-toggle-btn>
+                            <span>Изменить</span>
+                            <svg class="profile-settings__icon-pen">
+                              <use
+                                href="./images/sprite.svg#pen"
+                                xlink:href="./images/sprite.svg#pen"
+                              ></use>
+                            </svg>
+                            <svg class="profile-settings__icon-cross">
+                              <use
+                                href="./images/sprite.svg#cross"
+                                xlink:href="./images/sprite.svg#cross"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          class="profile-settings__current active"
+                          data-toggle-current
+                        >
+                          <div class="profile-settings__current-row">
+                            <div class="profile-settings__current-group">
+                              <span class="profile-settings__current-label"
+                                >Серия</span
+                              >
+                              <span class="profile-settings__current-value"
+                                >3703</span
+                              >
+                            </div>
+                            <div class="profile-settings__current-group">
+                              <span class="profile-settings__current-label"
+                                >Номер паспорта</span
+                              >
+                              <span class="profile-settings__current-value"
+                                >833248</span
+                              >
+                            </div>
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Место рождения</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >Санкт-Петербург</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Дата выдачи паспорта</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >25.10.1977</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Кем выдан</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >ГУ МВД России по г.Санкт-Петербург</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-row">
+                            <div class="profile-settings__current-group">
+                              <span class="profile-settings__current-label"
+                                >Код подразделения</span
+                              >
+                              <span class="profile-settings__current-value"
+                                >770 - 011</span
+                              >
+                            </div>
+                            <div class="profile-settings__current-group">
+                              <span class="profile-settings__current-label"
+                                >Ваш пол</span
+                              >
+                              <span class="profile-settings__current-value"
+                                >Мужской</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <form
+                          class="profile-settings__form"
+                          data-toggle-edit
+                          style="display: none"
+                        >
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="3703"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="833248"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs select">
+                            <div class="select__wrapper">
+                              <select data-select>
+                                <option value="Санкт-Петербург">
+                                  Санкт-Петербург
+                                </option>
+                                <option value="Москва">Москва</option>
+                                <option value="Екатеренбург">
+                                  Екатеренбург
+                                </option>
+                              </select>
+                              <div class="select__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#drop"
+                                    xlink:href="./images/sprite.svg#drop"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="25.10.1977"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="ГУ МВД России по г.Санкт-Петербург"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="770 - 011"
+                              />
+                            </div>
+                          </div>
+                          <div class="radio">
+                            <div class="radio__wrapper">
+                              <label class="radio__group"
+                                ><input
+                                  checked="checked"
+                                  class="radio__input"
+                                  type="radio"
+                                  name="sex"
+                                  value="male"
+                                />
+                                <div class="radio__content">
+                                  <div class="radio__icon"></div>
+                                  <span class="radio__text">Я мужчина</span>
+                                </div></label
+                              >
+                              <label class="radio__group"
+                                ><input
+                                  class="radio__input"
+                                  type="radio"
+                                  name="sex"
+                                  value="female"
+                                />
+                                <div class="radio__content">
+                                  <div class="radio__icon"></div>
+                                  <span class="radio__text">Я женщина</span>
+                                </div></label
+                              >
+                            </div>
+                          </div>
+                          <button
+                            class="profile-settings__submit button"
+                            type="submit"
+                          >
+                            Сохранить
+                          </button>
+                        </form>
+                      </div>
+                      <div class="profile-settings__group" data-toggle-card>
+                        <div class="profile-settings__head">
+                          <span class="profile-settings__label"
+                            >Адрес регистрации</span
+                          >
+                          <div class="profile-settings__edit" data-toggle-btn>
+                            <span>Изменить</span>
+                            <svg class="profile-settings__icon-pen">
+                              <use
+                                href="./images/sprite.svg#pen"
+                                xlink:href="./images/sprite.svg#pen"
+                              ></use>
+                            </svg>
+                            <svg class="profile-settings__icon-cross">
+                              <use
+                                href="./images/sprite.svg#cross"
+                                xlink:href="./images/sprite.svg#cross"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          class="profile-settings__current active"
+                          data-toggle-current
+                        >
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Область</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >Ленинградская</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Населенный пункт</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >г. Санкт-Петербург</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Улица</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >Рубинштейна</span
+                            >
+                          </div>
+                          <div class="profile-settings__current-group">
+                            <span class="profile-settings__current-label"
+                              >Дом, квартира</span
+                            >
+                            <span class="profile-settings__current-value"
+                              >14А, 57</span
+                            >
+                          </div>
+                        </div>
+                        <form
+                          class="profile-settings__form"
+                          data-toggle-edit
+                          style="display: none"
+                        >
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="Ленинградская"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs select">
+                            <div class="select__wrapper">
+                              <select data-select>
+                                <option value="Санкт-Петербург">
+                                  Санкт-Петербург
+                                </option>
+                                <option value="Москва">Москва</option>
+                                <option value="Екатеренбург">
+                                  Екатеренбург
+                                </option>
+                              </select>
+                              <div class="select__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#drop"
+                                    xlink:href="./images/sprite.svg#drop"
+                                  ></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="Рубинштейна"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Ввод"
+                                value="14А, 57"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="profile-settings__submit button"
+                            type="submit"
+                          >
+                            Сохранить
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="profile-settings__socials">
+                      <div
+                        class="profile-settings__social"
+                        style="--social-clr: #1d9bf0"
+                      >
+                        <svg
+                          class="profile-settings__logo"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.7715 3.55243C10.7788 3.65822 10.7788 3.76401 10.7788 3.87077C10.7788 7.12391 8.30225 10.8758 3.7738 10.8758V10.8738C2.43608 10.8758 1.12614 10.4926 0 9.7701C0.194516 9.7935 0.390006 9.8052 0.585984 9.80569C1.69458 9.80666 2.77148 9.4347 3.64363 8.74975C2.59013 8.72976 1.6663 8.04286 1.34357 7.04006C1.71261 7.11123 2.09287 7.09661 2.45509 6.99764C1.30652 6.76559 0.480195 5.75645 0.480195 4.58448V4.55328C0.822425 4.7439 1.20561 4.84969 1.59756 4.86139C0.515783 4.13841 0.182328 2.69929 0.835588 1.57412C2.08556 3.11221 3.9298 4.04725 5.90957 4.14621C5.71115 3.29112 5.98221 2.39509 6.62182 1.79399C7.61341 0.861874 9.17294 0.90965 10.1051 1.90075C10.6564 1.79204 11.1849 1.58972 11.6685 1.30307C11.4847 1.87296 11.1001 2.35706 10.5862 2.66468C11.0742 2.60715 11.551 2.4765 12 2.27711C11.6695 2.77242 11.2531 3.20386 10.7715 3.55243Z"
+                          />
+                        </svg>
+                        <span>Twitter</span>
+                        <button
+                          class="profile-settings__social-remove"
+                          type="button"
+                        >
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#delete"
+                              xlink:href="./images/sprite.svg#delete"
+                            ></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <a
+                        class="profile-settings__social profile-settings__social_tie"
+                        href="#"
+                        style="--social-clr: #0077ff"
+                        ><svg
+                          class="profile-settings__logo"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.53588 9.375C2.43594 9.375 0.0974391 6.84122 0 2.625H2.05372C2.12117 5.71959 3.63519 7.03041 4.83444 7.30068V2.625H6.76831V5.29392C7.95257 5.17905 9.19664 3.96284 9.61638 2.625H11.5502C11.2279 4.27365 9.87875 5.48987 8.91935 5.98987C9.87875 6.39527 11.4154 7.45608 12 9.375H9.87126C9.41404 8.09122 8.27487 7.09797 6.76831 6.96284V9.375H6.53588Z"
+                          />
+                        </svg>
+                        <span
+                          data-social-name="ВКонтакте"
+                          data-social-name-hover="Привязать"
+                        ></span>
+                        <div class="profile-settings__social-icon">
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#arrow-right"
+                              xlink:href="./images/sprite.svg#arrow-right"
+                            ></use>
+                          </svg></div
+                      ></a>
+                      <div
+                        class="profile-settings__social"
+                        style="--social-clr: #1d52a1"
+                      >
+                        <svg
+                          class="profile-settings__logo"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 3.96694H4.28571V2.77686C4.28571 2.24688 4.314 1.40221 4.71429 0.892562C5.13364 0.355835 5.65093 0 6.64286 0C8.26071 0 9 0.198347 9 0.198347L8.67857 2.08264C8.33425 1.96699 7.97303 1.90012 7.60714 1.8843C7.1055 1.8843 6.64286 1.99706 6.64286 2.47934V3.96694H8.78571V5.75207H6.64286V12H4.28571V5.75207H3V3.96694Z"
+                          />
+                        </svg>
+                        <span>Facebook</span>
+                        <button
+                          class="profile-settings__social-remove"
+                          type="button"
+                        >
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#delete"
+                              xlink:href="./images/sprite.svg#delete"
+                            ></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <a
+                        class="profile-settings__social profile-settings__social_tie"
+                        href="#"
+                        style="--social-clr: #1870b1"
+                        ><svg
+                          class="profile-settings__logo"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.8511 7.25317V11.5388H10.2791V7.54019C10.2791 6.5357 9.90707 5.85018 8.9761 5.85018C8.26542 5.85018 7.84249 6.31217 7.65643 6.75907C7.58858 6.91884 7.57112 7.14121 7.57112 7.36485V11.5388H4.99826C4.99826 11.5388 5.03291 4.76645 4.99826 4.06478H7.57086V5.1242C7.56565 5.13212 7.55887 5.14067 7.55396 5.14835H7.57086V5.1242C7.91266 4.61566 8.52307 3.88919 9.88936 3.88919C11.5821 3.88917 12.8511 4.95742 12.8511 7.25317ZM2.30695 0.461914C1.42678 0.461914 0.851074 1.01961 0.851074 1.753C0.851074 2.47041 1.41012 3.04503 2.2728 3.04503H2.28998C3.1872 3.04503 3.74519 2.47052 3.74519 1.753C3.72828 1.01961 3.1872 0.461914 2.30695 0.461914ZM1.00388 11.5388H3.57576V4.06478H1.00388V11.5388Z"
+                          />
+                        </svg>
+                        <span
+                          data-social-name="LinkedIn"
+                          data-social-name-hover="Привязать"
+                        ></span>
+                        <div class="profile-settings__social-icon">
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#arrow-right"
+                              xlink:href="./images/sprite.svg#arrow-right"
+                            ></use>
+                          </svg></div
+                      ></a>
+                    </div>
+                    <form class="profile-settings__password">
+                      <div class="profile-settings__head">
+                        <span class="profile-settings__label"
+                          >Сменить пароль</span
+                        >
+                      </div>
+                      <div class="profile-settings__password-inputs">
+                        <div class="inputs input">
+                          <div class="input__wrapper">
+                            <input
+                              class="input__target"
+                              type="password"
+                              placeholder="Старый пароль"
+                            />
+                            <span
+                              class="input__pass-toggle"
+                              data-visible-pass-btn
+                              ><svg>
+                                <use
+                                  href="./images/sprite.svg#eye"
+                                  xlink:href="./images/sprite.svg#eye"
+                                ></use></svg
+                            ></span>
+                          </div>
+                        </div>
+                        <div class="inputs input">
+                          <div class="input__wrapper">
+                            <input
+                              class="input__target"
+                              type="password"
+                              placeholder="Новый пароль"
+                            />
+                            <span
+                              class="input__pass-toggle"
+                              data-visible-pass-btn
+                              ><svg>
+                                <use
+                                  href="./images/sprite.svg#eye"
+                                  xlink:href="./images/sprite.svg#eye"
+                                ></use></svg
+                            ></span>
+                          </div>
+                        </div>
+                        <div class="inputs input">
+                          <div class="input__wrapper">
+                            <input
+                              class="input__target"
+                              type="password"
+                              placeholder="Новый пароль еще раз"
+                            />
+                            <span
+                              class="input__pass-toggle"
+                              data-visible-pass-btn
+                              ><svg>
+                                <use
+                                  href="./images/sprite.svg#eye"
+                                  xlink:href="./images/sprite.svg#eye"
+                                ></use></svg
+                            ></span>
+                          </div>
+                        </div>
+                        <button
+                          class="profile-settings__submit button"
+                          type="submit"
+                        >
+                          Сменить пароль
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  class="profile__events events"
+                  data-tab-body="events"
+                  style="display: none"
+                >
+                  <div class="events__wrapper">
+                    <h2 class="events__title title">Лента событий</h2>
+                    <div class="events__items">
+                      <div class="events__item new">
+                        <span class="events__label"
+                          >Оформление подписки на месяц за $25</span
+                        >
+                        <time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                      <div class="events__item new">
+                        <span class="events__label"
+                          >Запрос на переоценку вашего скоринга с 400 баллов до
+                          600 баллов </span
+                        ><time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                      <div class="events__item">
+                        <span class="events__label"
+                          >Списание $ 25 с карты **** 2144</span
+                        >
+                        <time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                      <div class="events__item">
+                        <span class="events__label"
+                          >Запрос на переоценку вашего скоринга с 400 баллов до
+                          600 баллов </span
+                        ><time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                      <div class="events__item">
+                        <span class="events__label"
+                          >Запрос на переоценку вашего скоринга </span
+                        ><time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile__subscription subscription"
+                  data-tab-body="subscription"
+                  style="display: none"
+                >
+                  <div class="subscription__wrapper">
+                    <h2 class="subscription__title title">
+                      Подписка со скидкой 60%
+                    </h2>
+                    <div class="subscription__body">
+                      <div class="subscription__current">
+                        <span class="subscription__old-sum">1 200₽</span>
+                        <strong class="subscription__current-sum">399₽</strong>
+                        <span class="subscription__name">Недельный план</span>
+                        <button
+                          class="subscription__button button-secondary"
+                          type="button"
+                        >
+                          <span class="button-secondary__text"
+                            >Показать ещё варианты</span
+                          >
+                        </button>
+                      </div>
+                      <div class="subscription__features">
+                        <span class="subscription__label">Приемущества</span>
+                        <ul class="subscription__features-items">
+                          <li class="subscription__feature">
+                            <div class="subscription__feature-icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#check"
+                                  xlink:href="./images/sprite.svg#check"
+                                ></use>
+                              </svg>
+                            </div>
+                            <p class="subscription__feature-label">
+                              Кредит за 10 минут
+                            </p>
+                          </li>
+                          <li class="subscription__feature">
+                            <div class="subscription__feature-icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#check"
+                                  xlink:href="./images/sprite.svg#check"
+                                ></use>
+                              </svg>
+                            </div>
+                            <p class="subscription__feature-label">
+                              Моментальные кредиты
+                            </p>
+                          </li>
+                          <li class="subscription__feature">
+                            <div class="subscription__feature-icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#check"
+                                  xlink:href="./images/sprite.svg#check"
+                                ></use>
+                              </svg>
+                            </div>
+                            <p class="subscription__feature-label">
+                              Гибкие условия
+                            </p>
+                          </li>
+                          <li class="subscription__feature">
+                            <div class="subscription__feature-icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#check"
+                                  xlink:href="./images/sprite.svg#check"
+                                ></use>
+                              </svg>
+                            </div>
+                            <p class="subscription__feature-label">
+                              Еженедельные выплаты
+                            </p>
+                          </li>
+                          <li class="subscription__feature">
+                            <div class="subscription__feature-icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#check"
+                                  xlink:href="./images/sprite.svg#check"
+                                ></use>
+                              </svg>
+                            </div>
+                            <p class="subscription__feature-label">
+                              Возможность переоценки скоринга
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <button
+                        class="subscription__button button-secondary"
+                        type="button"
+                      >
+                        <span class="button-secondary__text"
+                          >Показать ещё варианты</span
+                        >
+                      </button>
+                      <div class="subscription__info">
+                        <span class="subscription__label"
+                          >Как вернуть деньги?</span
+                        >
+                        <p class="subscription__text">
+                          Сайт рыбатекст поможет дизайнеру, верстальщику,
+                          вебмастеру сгенерировать несколько абзацев более менее
+                          осмысленного текста рыбы на русском языке, а
+                          начинающему оратору отточить навык публичных
+                          выступлений в домашних условиях. При создании
+                          генератора мы использовали небезизвестный
+                          универсальный код речей.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile__newsletter newsletter"
+                  data-tab-body="newsletter"
+                  style="display: none"
+                >
+                  <div class="newsletter__wrapper">
+                    <h2 class="newsletter__title title">Рассылка</h2>
+                    <div class="newsletter__items">
+                      <div class="newsletter__item">
+                        <div class="newsletter__checkbox checkbox">
+                          <div class="checkbox__wrapper">
+                            <label class="checkbox__label"
+                              ><input class="checkbox__input" type="checkbox" />
+                              <div class="checkbox__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#check"
+                                    xlink:href="./images/sprite.svg#check"
+                                  ></use>
+                                </svg></div
+                            ></label>
+                          </div>
+                        </div>
+                        <span class="newsletter__label">Email рассылка</span>
+                        <p class="newsletter__text">
+                          По своей сути рыбатекст является альтернативой
+                          традиционному lorem ipsum, который вызывает у некторых
+                          людей недоумение при попытках прочитать рыбу текст. В
+                          отличии от lorem ipsum, текст рыба на русском языке
+                          наполнит любой макет непонятным смыслом.
+                        </p>
+                      </div>
+                      <div class="newsletter__item">
+                        <div class="newsletter__checkbox checkbox">
+                          <div class="checkbox__wrapper">
+                            <label class="checkbox__label"
+                              ><input class="checkbox__input" type="checkbox" />
+                              <div class="checkbox__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#check"
+                                    xlink:href="./images/sprite.svg#check"
+                                  ></use>
+                                </svg></div
+                            ></label>
+                          </div>
+                        </div>
+                        <span class="newsletter__label">SMS рассылка</span>
+                        <p class="newsletter__text">
+                          По своей сути рыбатекст является альтернативой
+                          традиционному lorem ipsum, который вызывает у некторых
+                          людей недоумение при попытках прочитать рыбу текст. В
+                          отличии от lorem ipsum, текст рыба на русском языке
+                          наполнит любой макет непонятным смыслом.
+                        </p>
+                      </div>
+                      <div class="newsletter__item">
+                        <div class="newsletter__checkbox checkbox">
+                          <div class="checkbox__wrapper">
+                            <label class="checkbox__label"
+                              ><input class="checkbox__input" type="checkbox" />
+                              <div class="checkbox__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#check"
+                                    xlink:href="./images/sprite.svg#check"
+                                  ></use>
+                                </svg></div
+                            ></label>
+                          </div>
+                        </div>
+                        <span class="newsletter__label"
+                          >Партнерская рассылка</span
+                        >
+                        <p class="newsletter__text">
+                          По своей сути рыбатекст является альтернативой
+                          традиционному lorem ipsum, который вызывает у некторых
+                          людей недоумение при попытках прочитать рыбу текст. В
+                          отличии от lorem ipsum, текст рыба на русском языке
+                          наполнит любой макет непонятным смыслом.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="index__documents documents"
+                  data-tab-body="documents"
+                  style="display: none"
+                >
+                  <div class="documents__wrapper">
+                    <h3 class="documents__title title">Документы</h3>
+                    <div class="documents__items" data-accordion data-ac>
+                      <div class="documents__item" data-ac-item>
+                        <div class="documents__head">
+                          <time class="documents__date"
+                            >25 Июн 2020 - 21:40</time
+                          >
+                          <span class="documents__label"
+                            ><span
+                              >Описание услуги по займу, общей суммой 2 500 ₽ </span
+                            ><strong>2 500 ₽</strong> </span
+                          ><a class="documents__button-offers button" href="#"
+                            >Персональные предложения</a
+                          >
+                          <a class="documents__resubmit" href="#"
+                            >Отправить код повторно</a
+                          >
+                          <div class="documents__ac-button" data-ac-button>
+                            Отчет по автоматической подачи заявки на займ
+                            <div class="documents__icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#drop"
+                                  xlink:href="./images/sprite.svg#drop"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="documents__body" data-ac-body>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_01.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_02.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_03.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="documents__item" data-ac-item>
+                        <div class="documents__head">
+                          <time class="documents__date"
+                            >25 Июн 2020 - 21:40</time
+                          >
+                          <span class="documents__label"
+                            ><span
+                              >Описание услуги по займу, общей суммой 2 500 ₽ </span
+                            ><strong>2 500 ₽</strong> </span
+                          ><a class="documents__button-offers button" href="#"
+                            >Персональные предложения</a
+                          >
+                          <a class="documents__resubmit" href="#"
+                            >Отправить код повторно</a
+                          >
+                          <div class="documents__ac-button" data-ac-button>
+                            Отчет по автоматической подачи заявки на займ
+                            <div class="documents__icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#drop"
+                                  xlink:href="./images/sprite.svg#drop"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="documents__body" data-ac-body>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_01.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_02.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_03.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="documents__item" data-ac-item>
+                        <div class="documents__head">
+                          <time class="documents__date"
+                            >25 Июн 2020 - 21:40</time
+                          >
+                          <span class="documents__label"
+                            ><span
+                              >Описание услуги по займу, общей суммой 2 500 ₽ </span
+                            ><strong>2 500 ₽</strong> </span
+                          ><a class="documents__button-offers button" href="#"
+                            >Персональные предложения</a
+                          >
+                          <a class="documents__resubmit" href="#"
+                            >Отправить код повторно</a
+                          >
+                          <div class="documents__ac-button" data-ac-button>
+                            Отчет по автоматической подачи заявки на займ
+                            <div class="documents__icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#drop"
+                                  xlink:href="./images/sprite.svg#drop"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="documents__body" data-ac-body>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_01.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_02.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_03.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="index__feedback feedback"
+                  data-tab-body="feedback"
+                  style="display: none"
+                >
+                  <div class="feedback__wrapper">
+                    <div class="feedback__body">
+                      <h2 class="feedback__title title">
+                        Форма обратной связи
+                      </h2>
+                      <span class="feedback__subtitle"
+                        >Заполните, чтобы с нами связаться</span
+                      >
+                      <form class="feedback__form">
+                        <div class="feedback__row">
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="info@mail.ru"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="+7 (XXX) XXX-XX-XX"
+                              />
+                            </div>
+                          </div>
+                          <div class="inputs input">
+                            <div class="input__wrapper">
+                              <input
+                                class="input__target"
+                                type="text"
+                                placeholder="Имя"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="inputs input">
+                          <div class="input__wrapper">
+                            <textarea
+                              class="input__target"
+                              placeholder="Введите комментарий"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="checkbox">
+                          <div class="checkbox__wrapper">
+                            <label class="checkbox__label"
+                              ><input class="checkbox__input" type="checkbox" />
+                              <div class="checkbox__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#check"
+                                    xlink:href="./images/sprite.svg#check"
+                                  ></use>
+                                </svg>
+                              </div>
+                              <p class="checkbox__text">
+                                Я ознакомлен и согласен со
+                                <span data-popup-id="id_popup">следующим</span>
+                              </p></label
+                            >
+                          </div>
+                        </div>
+                        <button class="feedback__submit button" type="submit">
+                          Отправить
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div id="id_popup" class="popup" data-popup>
+                    <div class="popup__wrapper" data-popup-wrapper>
+                      <div class="popup__body">
+                        <div class="popup__body-wrapper" data-popup-body>
+                          <div class="popup__close" data-popup-close>
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#close"
+                                xlink:href="./images/sprite.svg#close"
+                              ></use>
+                            </svg>
+                          </div>
+                          <h2 class="popup__title title">Соглашения</h2>
+                          <p class="popup__text">
+                            Даю свое согласие на
+                            <a href="#">обработку персональных данных</a> и на
+                            получение рекламных материалов, принимаю условия
+                            публичной оферты, соглашение о применении
+                            рекуррентных платежей и тарифы сервиса. Осознаю, что
+                            оплата услуг не гарантирует получение займа.
+                            Настоящим подтверждаю, что не являюсь получателем
+                            единовременных и/или регулярных денежных выплат,
+                            предусмотренных Указами Президента РФ.
+                          </p>
+                          <div class="popup__actions">
+                            <a class="popup__action button" href="#">Далее</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="index__about about"
+                  data-tab-body="about"
+                  style="display: none"
+                >
+                  <div class="about__wrapper">
+                    <h3 class="about__title title">О сервисе</h3>
+                    <span class="about__subtitle"
+                      >Одновременно подайте заявку, как минимум, в 3 компании
+                      для гарантированного получения займа.</span
+                    >
+                    <div class="about__body">
+                      <span class="about__label"
+                        >Договор присоединения о предоставлении юридических
+                        услуг через сеть интернет (публичная оферта)</span
+                      >
+                      <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Elementum sagittis vitae et leo duis. Enim
+                        praesent elementum facilisis leo vel fringilla. Mauris
+                        pellentesque pulvinar pellentesque habitant morbi
+                        tristique senectus. Nibh tortor id aliquet lectus proin.
+                        Tellus elementum sagittis vitae et leo duis ut diam
+                        quam.
+                      </p>
+                      <div class="about__group">
+                        <span class="about__sublabel">1.</span>
+                        <span class="about__sublabel"
+                          >Tellus elementum sagittis vitae et leo duis ut diam
+                          quam</span
+                        >
+                        <p class="about__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Elementum sagittis vitae et leo
+                          duis. Enim praesent elementum facilisis leo vel
+                          fringilla. Mauris pellentesque pulvinar pellentesque
+                          habitant morbi tristique senectus. Nibh tortor id
+                          aliquet lectus proin. Tellus elementum sagittis vitae
+                          et leo duis ut diam quam.
+                        </p>
+                      </div>
+                      <div class="about__group">
+                        <span class="about__sublabel">2.</span>
+                        <span class="about__sublabel"
+                          >Lorem ipsum dolor sit amet, consectetur</span
+                        >
+                        <p class="about__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Elementum sagittis vitae et leo
+                          duis. Enim praesent elementum facilisis leo vel
+                          fringilla. Mauris pellentesque pulvinar pellentesque
+                          habitant morbi tristique senectus. Nibh tortor id
+                          aliquet lectus proin. Tellus elementum sagittis vitae
+                          et leo duis ut diam quam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="index__offers offers"
+                  data-tab-body="offers"
+                  style="display: none"
+                >
+                  <div class="offers__wrapper">
+                    <h2 class="offers__title title">Мои предложения</h2>
+                    <span class="offers__subtitle"
+                      >Одновременно подайте заявку, как минимум, в 3 компании
+                      для гарантированного получения займа.</span
+                    >
+                    <div class="offers__items">
+                      <a class="offers__item offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__head">
+                            <div class="offer__logo">
+                              <img
+                                src="./images/offer/logo_01.png"
+                                alt="logo"
+                              />
+                            </div>
+                            <div class="offer__info">
+                              <span class="offer__percent">савка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                          </div>
+                          <button class="offer__button button" type="button">
+                            <span>Беру займ</span>
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#arrow"
+                                xlink:href="./images/sprite.svg#arrow"
+                              ></use>
+                            </svg>
+                          </button></div></a
+                      ><a
+                        class="offers__item offer"
+                        href="#"
+                        style="--offer-clr: #7b61ff"
+                        ><div class="offer__wrapper">
+                          <div class="offer__head">
+                            <div class="offer__logo">
+                              <img
+                                src="./images/offer/logo_02.png"
+                                alt="logo"
+                              />
+                            </div>
+                            <div class="offer__info">
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                          </div>
+                          <button class="offer__button button" type="button">
+                            <span>Беру займ</span>
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#arrow"
+                                xlink:href="./images/sprite.svg#arrow"
+                              ></use>
+                            </svg>
+                          </button></div></a
+                      ><a
+                        class="offers__item offer"
+                        href="#"
+                        style="--offer-clr: #00a3ff"
+                        ><div class="offer__wrapper">
+                          <div class="offer__head">
+                            <div class="offer__logo">
+                              <img
+                                src="./images/offer/logo_03.png"
+                                alt="logo"
+                              />
+                            </div>
+                            <div class="offer__info">
+                              <span class="offer__percent">савка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                          </div>
+                          <button class="offer__button button" type="button">
+                            <span>Беру займ</span>
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#arrow"
+                                xlink:href="./images/sprite.svg#arrow"
+                              ></use>
+                            </svg>
+                          </button></div></a
+                      ><a class="offers__item offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__head">
+                            <div class="offer__logo">
+                              <img
+                                src="./images/offer/logo_04.png"
+                                alt="logo"
+                              />
+                            </div>
+                            <div class="offer__info">
+                              <span class="offer__percent">савка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                          </div>
+                          <button class="offer__button button" type="button">
+                            <span>Беру займ</span>
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#arrow"
+                                xlink:href="./images/sprite.svg#arrow"
+                              ></use>
+                            </svg>
+                          </button></div></a
+                      ><a class="offers__item offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__head">
+                            <div class="offer__logo">
+                              <img
+                                src="./images/offer/logo_05.png"
+                                alt="logo"
+                              />
+                            </div>
+                            <div class="offer__info">
+                              <span class="offer__percent">савка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                          </div>
+                          <button class="offer__button button" type="button">
+                            <span>Беру займ</span>
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#arrow"
+                                xlink:href="./images/sprite.svg#arrow"
+                              ></use>
+                            </svg>
+                          </button></div></a
+                      ><a
+                        class="offers__item offer"
+                        href="#"
+                        style="--offer-clr: #f22a52"
+                        ><div class="offer__wrapper">
+                          <div class="offer__head">
+                            <div class="offer__logo">
+                              <img
+                                src="./images/offer/logo_06.png"
+                                alt="logo"
+                              />
+                            </div>
+                            <div class="offer__info">
+                              <span class="offer__percent">савка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                          </div>
+                          <button class="offer__button button" type="button">
+                            <span>Беру займ</span>
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#arrow"
+                                xlink:href="./images/sprite.svg#arrow"
+                              ></use>
+                            </svg>
+                          </button></div
+                      ></a>
+                    </div>
+                    <a class="offers__more button-secondary" href="#"
+                      ><span class="button-secondary__text"
+                        >Показать ещё варианты</span
+                      ></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__head">
+            <a class="footer__logo" href="./index.html"
+              ><img src="./images/footer/logo_01.svg" alt="logo"
+            /></a>
+            <div class="footer__contacts">
+              <a class="footer__contact" href="#"
+                ><svg class="footer__icon">
+                  <use
+                    href="./images/sprite.svg#phone"
+                    xlink:href="./images/sprite.svg#phone"
+                  ></use>
+                </svg>
+                <span>8 (495) 845-27-71</span> </a
+              ><a class="footer__contact" href="#"
+                ><svg class="footer__icon">
+                  <use
+                    href="./images/sprite.svg#mail"
+                    xlink:href="./images/sprite.svg#mail"
+                  ></use>
+                </svg>
+                <span>support@unocredit.ru</span> </a
+              ><a class="footer__contact" href="#"
+                ><svg class="footer__icon">
+                  <use
+                    href="./images/sprite.svg#settings"
+                    xlink:href="./images/sprite.svg#settings"
+                  ></use>
+                </svg>
+                <span>Отписаться</span> </a
+              ><a class="footer__contact" href="#"
+                ><svg class="footer__icon">
+                  <use
+                    href="./images/sprite.svg#edit"
+                    xlink:href="./images/sprite.svg#edit"
+                  ></use>
+                </svg>
+                <span>Обратная связь</span></a
+              >
+            </div>
+          </div>
+          <div class="footer__info">
+            <span class="footer__label">Правовая информация</span>
+            <p class="footer__text">
+              Услугу "Единая заявка" "У Соседа" предоставляет ИП Смольников
+              Александр Дмитриевич (ОГРНИП: 320183200007442, ИНН: 181000561675).
+              ИП Смольников Александр Дмитриевич зарегистрирован в реестре РКН,
+              как оператор персональных данных (регистр. номер: 78-21-008269).
+              Выдача займов у партнеров осуществляется в российских рублях, на
+              банковский счет, наличными или на карту, гражданам Российской
+              Федерации. Сервис не относится к финансовым учреждениям, не
+              является кредитором или банком и не несет ответственности за
+              заключенные впоследствие клиентами и партерами договоры
+              кредитования. Доступные суммы займов: от 1 000 рублей до 100 000
+              рублей. Срок займа: от 62 дней, при процентной ставке: от 0% до
+              365% годовых. Находясь на сайте, а так же совершая любые действия
+              на сайте, Вы принимаете условия договора публичной оферты,
+              соглашение
+            </p>
+            <p class="footer__text">
+              <span
+                >о применении рекуррентных платежей, политику обработки
+                персональных данных, тарифами сервиса, а так же даете согласие
+                на получение рекламных материалов и на обработку персональных
+                данных. </span
+              ><span
+                >По любым вопросам вы можете связаться со специалистами сервиса
+                по электронной почте support@unocredit.ru. Стоимость платной
+                услуги 1499 рублей. Оплата услуги происходит в рассрочку: четыре
+                платежа по 374,75 рублей каждые 5 дней. Оплачивая услугу, вы
+                получаете доступ к функциональности сервиса сроком на 1 год (365
+                дней) с момента активации услуги. </span
+              ><span
+                >Если услуга перестала быть актуальна для вас (вы получили займ
+                или более не нуждаетесь в займах), вы можете остановить
+                обработку заявки в разделе
+                <a href="#">Отписаться от услуг</a></span
+              >
+            </p>
+            <span class="footer__label">Наши партнеры</span>
+            <ul class="footer__partners">
+              <li>
+                Екапуста ООО МКК «Русинтерфинанс» Лицензия ЦБ РФ: 2120754001243
+                Адрес: 630055, Новосибирская область, г. Новосибирск, ул.
+                Гнесиных, д. 10/1, оф. 202
+              </li>
+              <li>
+                ЗАЙМЕР ООО МФК «Займер» Лицензия ЦБ РФ: 651303532004088 Адрес:
+                630099, Новосибирская область, г. Новосибирск, ул. Октябрьская
+                Магистраль, д. 3, оф. 906
+              </li>
+              <li>
+                Moneza ООО МКК «МАКРО» Лицензия ЦБ РФ: 001603045007582 Адрес:
+                115114, г. Москва, ул. Летниковская, д. 10, стр. 4, пом. I,
+                комн. 15
+              </li>
+              <li>
+                Creditter ООО МКК "Кредиттер" Лицензия ЦБ РФ: 1903045009373
+                115280, г. Москва, ул. Ленинская слобода, д. 19, строение 6,
+                этаж 2, ком. 7
+              </li>
+              <li>
+                Money Man ООО МФК "Мани Мен" Лицензия ЦБ РФ: 2110177000478
+                Адрес: 121096, г. Москва, ул. Василисы Кожиной, д. 1, оф. Д13
+              </li>
+              <li>
+                Joy Money ООО МФК "Джой Мани" Лицензия ЦБ РФ: 651403550005450
+                Адрес: 123100, г. Москва, Пресненская наб., дом 6, строение 2,
+                южное лобби, 36 этаж, офис 3630
+              </li>
+              <li>
+                Zaymigo ООО «Займиго МФК» Лицензия ЦБ РФ: 651303322004222 Адрес:
+                603093, Нижегородская область, г. Нижний Новгород, ул.
+                Ковровская, д. 21А, пом. 603
+              </li>
+              <li>
+                Turbozaim ООО МФК «Турбозайм» Лицензия ЦБ РФ: 651303045003951
+                Адрес: 123290, г.Москва, Магистральный 1-й туп., д.11, стр.10,
+                пом.1, эт.1
+              </li>
+              <li>
+                Webbankir ООО МФК «ВЭББАНКИР» Лицензия ЦБ РФ: 2120177002077
+                Адрес: 125466, г. Москва, ул. Соколово-Мещерская, д. 29, оф. 308
+              </li>
+              <li>
+                ГлавФинанс ООО МКК Главная Финансовая Компания Лицензия ЦБ РФ:
+                2120323001658 Адрес: 350000, Краснодарский край, г. Краснодар,
+                ул. Коммунаров, д. 76, оф. 365/4
+              </li>
+              <li>
+                Lime ООО МФК «Лайм-Займ» Лицензия ЦБ РФ: 651303045004102 Адрес:
+                630102, Россия, Новосибирск ул. Кирова 48, офис 1401
+              </li>
+              <li>
+                ВебЗайм ООО МКК «Академическая» Лицензия ЦБ РФ: 19/035/50/009325
+                Адрес: 630091, г. Новосибирск, ул. Державина, д. 28, офис 301
+              </li>
+              <li>
+                До зарплаты ООО МФК "ДЗП-Центр" Лицензия ЦБ РФ: 651403140005467
+                Адрес: 190031, г. Санкт-Петербург, пер. Спасский, д. 14/35, лит.
+                А, пом. 38 Н.
+              </li>
+              <li>
+                GreenMoney ООО МКК "СФ" Лицензия ЦБ РФ: 1903045009345 650000,
+                Кемеровская область, Кемерово, улица 50 лет Октября, дом 11
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/profile.js"></script>
+  </body>
+</html>

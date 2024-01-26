@@ -462,9 +462,19 @@ body.no-scroll {
     --height: 2.5rem;
     --fs: 0.75rem;
     --pi: 1.25rem;
+    --bg: transparent;
+    --clr: var(--base-cristal-white, #fff);
     flex: 0 0 auto;
     width: auto;
     font-weight: 700;
+}
+
+.header__button.active {
+    --bg: var(--base-cristal-white, #fff);
+}
+
+.header__button.active:not(:hover) {
+    --clr: var(--buttons-green, #2dbe64);
 }
 
 @media (max-width: 992px) {
@@ -620,6 +630,10 @@ body.no-scroll {
         --fs: 1.125rem;
         width: 100%;
         display: flex;
+    }
+
+    .header__actions .header__button.active {
+        --bg: var(--gray-gray_10, #eaf0e6);
     }
 }
 
