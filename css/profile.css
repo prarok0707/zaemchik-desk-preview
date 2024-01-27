@@ -1553,9 +1553,15 @@ textarea.input__target {
 
 .offer__sum {
     display: block;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--base-rich-black, #06101a);
+}
+
+@media (min-width: 768px) {
+    .offer__sum {
+        font-size: 1.125rem;
+    }
 }
 
 .offer__button {
@@ -2980,9 +2986,15 @@ textarea.input__target {
 
 .offers__items {
     display: grid;
-    grid-template-columns: minmax(15.625rem, 26.875rem);
     justify-content: center;
+    grid-template-columns: 1fr;
     gap: 0.625rem;
+}
+
+@media (min-width: 350px) {
+    .offers__items {
+        grid-template-columns: minmax(15.625rem, 19.375rem);
+    }
 }
 
 @media (min-width: 576px) {

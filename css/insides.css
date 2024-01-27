@@ -1556,9 +1556,15 @@ textarea.input__target {
 
 .offer__sum {
     display: block;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--base-rich-black, #06101a);
+}
+
+@media (min-width: 768px) {
+    .offer__sum {
+        font-size: 1.125rem;
+    }
 }
 
 .offer__button {
@@ -2245,182 +2251,182 @@ textarea.input__target {
 }
 
 .shootingstar:nth-child(1) {
-    left: 83px;
-    top: 244px;
+    left: 199px;
+    top: 198px;
     animation-delay: calc(-400s / 1);
 }
 
 .shootingstar:nth-child(2) {
-    left: 79px;
-    top: 231px;
+    left: 139px;
+    top: 255px;
     animation-delay: calc(-400s / 2);
 }
 
 .shootingstar:nth-child(3) {
-    left: 39px;
-    top: 24px;
+    left: 140px;
+    top: 12px;
     animation-delay: calc(-400s / 3);
 }
 
 .shootingstar:nth-child(4) {
-    left: 191px;
-    top: 264px;
+    left: 78px;
+    top: 9px;
     animation-delay: calc(-400s / 4);
 }
 
 .shootingstar:nth-child(5) {
-    left: 300px;
-    top: 291px;
+    left: 155px;
+    top: 242px;
     animation-delay: calc(-400s / 5);
 }
 
 .shootingstar:nth-child(6) {
-    left: 158px;
-    top: 18px;
+    left: 167px;
+    top: 40px;
     animation-delay: calc(-400s / 6);
 }
 
 .shootingstar:nth-child(7) {
-    left: 286px;
-    top: 289px;
+    left: 172px;
+    top: 191px;
     animation-delay: calc(-400s / 7);
 }
 
 .shootingstar:nth-child(8) {
-    left: 198px;
-    top: 109px;
+    left: 92px;
+    top: 38px;
     animation-delay: calc(-400s / 8);
 }
 
 .shootingstar:nth-child(9) {
-    left: 89px;
-    top: 251px;
+    left: 201px;
+    top: 175px;
     animation-delay: calc(-400s / 9);
 }
 
 .shootingstar:nth-child(10) {
-    left: 215px;
-    top: 14px;
+    left: 54px;
+    top: 84px;
     animation-delay: calc(-400s / 10);
 }
 
 .shootingstar:nth-child(11) {
-    left: 271px;
-    top: 171px;
+    left: 165px;
+    top: 162px;
     animation-delay: calc(-400s / 11);
 }
 
 .shootingstar:nth-child(12) {
-    left: 223px;
-    top: 281px;
+    left: 102px;
+    top: 30px;
     animation-delay: calc(-400s / 12);
 }
 
 .shootingstar:nth-child(13) {
-    left: 229px;
-    top: 16px;
+    left: 251px;
+    top: 195px;
     animation-delay: calc(-400s / 13);
 }
 
 .shootingstar:nth-child(14) {
-    left: 174px;
-    top: 192px;
+    left: 161px;
+    top: 77px;
     animation-delay: calc(-400s / 14);
 }
 
 .shootingstar:nth-child(15) {
-    left: 234px;
-    top: 6px;
+    left: 288px;
+    top: 198px;
     animation-delay: calc(-400s / 15);
 }
 
 .shootingstar:nth-child(16) {
     left: 155px;
-    top: 277px;
+    top: 21px;
     animation-delay: calc(-400s / 16);
 }
 
 .shootingstar:nth-child(17) {
-    left: 292px;
-    top: 71px;
+    left: 69px;
+    top: 114px;
     animation-delay: calc(-400s / 17);
 }
 
 .shootingstar:nth-child(18) {
-    left: 228px;
-    top: 243px;
+    left: 259px;
+    top: 62px;
     animation-delay: calc(-400s / 18);
 }
 
 .shootingstar:nth-child(19) {
     left: 92px;
-    top: 153px;
+    top: 162px;
     animation-delay: calc(-400s / 19);
 }
 
 .shootingstar:nth-child(20) {
-    left: 15px;
-    top: 206px;
+    left: 261px;
+    top: 20px;
     animation-delay: calc(-400s / 20);
 }
 
 .shootingstar:nth-child(21) {
-    left: 22px;
-    top: 62px;
+    left: 247px;
+    top: 78px;
     animation-delay: calc(-400s / 21);
 }
 
 .shootingstar:nth-child(22) {
-    left: 4px;
-    top: 145px;
+    left: 145px;
+    top: 32px;
     animation-delay: calc(-400s / 22);
 }
 
 .shootingstar:nth-child(23) {
-    left: 164px;
-    top: 17px;
+    left: 85px;
+    top: 259px;
     animation-delay: calc(-400s / 23);
 }
 
 .shootingstar:nth-child(24) {
-    left: 31px;
-    top: 166px;
+    left: 32px;
+    top: 204px;
     animation-delay: calc(-400s / 24);
 }
 
 .shootingstar:nth-child(25) {
-    left: 239px;
-    top: 242px;
+    left: 266px;
+    top: 88px;
     animation-delay: calc(-400s / 25);
 }
 
 .shootingstar:nth-child(26) {
-    left: 44px;
-    top: 293px;
+    left: 120px;
+    top: 234px;
     animation-delay: calc(-400s / 26);
 }
 
 .shootingstar:nth-child(27) {
-    left: 265px;
-    top: 20px;
+    left: 2px;
+    top: 286px;
     animation-delay: calc(-400s / 27);
 }
 
 .shootingstar:nth-child(28) {
-    left: 35px;
-    top: 128px;
+    left: 225px;
+    top: 285px;
     animation-delay: calc(-400s / 28);
 }
 
 .shootingstar:nth-child(29) {
-    left: 203px;
-    top: 35px;
+    left: 175px;
+    top: 258px;
     animation-delay: calc(-400s / 29);
 }
 
 .shootingstar:nth-child(30) {
-    left: 271px;
-    top: 101px;
+    left: 281px;
+    top: 15px;
     animation-delay: calc(-400s / 30);
 }
 
@@ -2440,6 +2446,16 @@ textarea.input__target {
     }
 }
 
+.identification .input {
+    --height: 2.625rem;
+    --fs: 1.125rem;
+    --pi: 0.313rem;
+}
+
+.identification .input input {
+    text-align: center;
+}
+
 @media (max-width: 400px) {
     .identification .identification__form-body {
         min-height: 8.438rem;
@@ -2448,7 +2464,6 @@ textarea.input__target {
     .identification .input {
         --height: 2rem;
         --fs: 0.875rem;
-        --pi: 0.313rem;
     }
 }
 
@@ -2515,16 +2530,29 @@ textarea.input__target {
 }
 
 .identification__form-wrapper {
-    padding: 0 5.313rem 2.188rem 0;
+    width: 100%;
+    padding: 0 4.375rem 2.188rem 0;
+}
+
+@media (min-width: 400px) {
+    .identification__form-wrapper {
+        padding: 0 5.313rem 2.188rem 0;
+        width: auto;
+    }
 }
 
 .identification__form-body {
     width: 100%;
-    max-width: 18.125rem;
     min-height: 10.625rem;
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+@media (min-width: 400px) {
+    .identification__form-body {
+        max-width: 18.125rem;
+    }
 }
 
 .identification__label {
@@ -2574,7 +2602,7 @@ textarea.input__target {
     flex-direction: column;
     justify-content: space-between;
     gap: 0.313rem;
-    border-radius: 0.813rem;
+    border-radius: 0.625rem;
     background: var(--buttons-Linear, linear-gradient(90deg, #2dbe64 0%, #90be2d 100%));
     position: relative;
     z-index: 2;
@@ -2583,6 +2611,7 @@ textarea.input__target {
 @media (min-width: 576px) {
     .identification__front {
         padding: 1.25rem;
+        border-radius: 0.813rem;
     }
 }
 
@@ -2627,7 +2656,7 @@ textarea.input__target {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    border-radius: 0.813rem;
+    border-radius: 0.625rem;
     background: var(--base-cristal-white, #fff);
     position: absolute;
     top: 2.188rem;
@@ -2638,7 +2667,7 @@ textarea.input__target {
 .identification__back::before {
     content: "";
     width: 100%;
-    height: 2.375rem;
+    height: 22.4%;
     display: block;
     background: var(--gray-gray_40, #bcbccc);
     position: absolute;
@@ -2662,10 +2691,17 @@ textarea.input__target {
 @media (max-width: 400px) {
     .identification__back {
         padding: 0.938rem;
+        transform: translate3d(4.375rem, 0, 0);
     }
 
     .identification__back .input {
         max-width: 2.813rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .identification__back {
+        border-radius: 0.813rem;
     }
 }
 
@@ -2702,7 +2738,7 @@ textarea.input__target {
     gap: 0.625rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 350px) {
     .get-offers__items {
         grid-template-columns: minmax(12.5rem, 19.375rem);
         justify-content: center;
