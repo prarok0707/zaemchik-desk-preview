@@ -1515,15 +1515,21 @@ textarea.input__target {
 
 .offer__head {
     margin: 0 0 0.625rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.625rem 0.313rem;
+}
+
+@media (min-width: 576px) {
+    .offer__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.625rem 0.313rem;
+    }
 }
 
 .offer__logo {
-    flex: 0 1 9.688rem;
-    height: 3.313rem;
+    width: 100%;
+    height: 3.75rem;
+    margin: 0 0 0.313rem 0;
 }
 
 .offer__logo img {
@@ -1533,16 +1539,30 @@ textarea.input__target {
     object-fit: contain;
 }
 
+@media (min-width: 576px) {
+    .offer__logo {
+        flex: 0 1 9.688rem;
+        height: 3.313rem;
+        margin: 0;
+    }
+}
+
 .offer__info {
-    flex: 0 0 auto;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .offer__info {
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 .offer__percent {
     padding: 0 0.727em;
-    margin: 0 0 0.273em 0;
+    margin: 0 0.455em 0 0;
     display: block;
     font-family: "Golos Text";
     font-size: 0.688rem;
@@ -1554,11 +1574,25 @@ textarea.input__target {
     background: var(--offer-clr, var(--buttons-Linear, linear-gradient(90deg, #2dbe64 0%, #90be2d 100%)));
 }
 
+@media (min-width: 576px) {
+    .offer__percent {
+        margin: 0 0 0.273em 0;
+    }
+}
+
 .offer__sum {
+    margin: 0 0 0 auto;
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 700;
     color: var(--base-rich-black, #06101a);
+}
+
+@media (min-width: 576px) {
+    .offer__sum {
+        margin: 0;
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -2251,182 +2285,182 @@ textarea.input__target {
 }
 
 .shootingstar:nth-child(1) {
-    left: 254px;
-    top: 277px;
+    left: 120px;
+    top: 166px;
     animation-delay: calc(-400s / 1);
 }
 
 .shootingstar:nth-child(2) {
-    left: 144px;
-    top: 184px;
+    left: 234px;
+    top: 297px;
     animation-delay: calc(-400s / 2);
 }
 
 .shootingstar:nth-child(3) {
-    left: 133px;
-    top: 233px;
+    left: 103px;
+    top: 26px;
     animation-delay: calc(-400s / 3);
 }
 
 .shootingstar:nth-child(4) {
-    left: 283px;
-    top: 293px;
+    left: 123px;
+    top: 93px;
     animation-delay: calc(-400s / 4);
 }
 
 .shootingstar:nth-child(5) {
-    left: 178px;
-    top: 101px;
+    left: 74px;
+    top: 122px;
     animation-delay: calc(-400s / 5);
 }
 
 .shootingstar:nth-child(6) {
-    left: 191px;
-    top: 7px;
+    left: 249px;
+    top: 285px;
     animation-delay: calc(-400s / 6);
 }
 
 .shootingstar:nth-child(7) {
-    left: 112px;
-    top: 215px;
+    left: 184px;
+    top: 82px;
     animation-delay: calc(-400s / 7);
 }
 
 .shootingstar:nth-child(8) {
     left: 171px;
-    top: 125px;
+    top: 114px;
     animation-delay: calc(-400s / 8);
 }
 
 .shootingstar:nth-child(9) {
-    left: 84px;
-    top: 268px;
+    left: 235px;
+    top: 68px;
     animation-delay: calc(-400s / 9);
 }
 
 .shootingstar:nth-child(10) {
-    left: 140px;
-    top: 65px;
+    left: 80px;
+    top: 299px;
     animation-delay: calc(-400s / 10);
 }
 
 .shootingstar:nth-child(11) {
-    left: 46px;
-    top: 215px;
+    left: 30px;
+    top: 55px;
     animation-delay: calc(-400s / 11);
 }
 
 .shootingstar:nth-child(12) {
-    left: 10px;
-    top: 101px;
+    left: 74px;
+    top: 115px;
     animation-delay: calc(-400s / 12);
 }
 
 .shootingstar:nth-child(13) {
-    left: 89px;
+    left: 121px;
     top: 12px;
     animation-delay: calc(-400s / 13);
 }
 
 .shootingstar:nth-child(14) {
-    left: 145px;
-    top: 163px;
+    left: 134px;
+    top: 160px;
     animation-delay: calc(-400s / 14);
 }
 
 .shootingstar:nth-child(15) {
-    left: 64px;
-    top: 98px;
+    left: 293px;
+    top: 244px;
     animation-delay: calc(-400s / 15);
 }
 
 .shootingstar:nth-child(16) {
-    left: 152px;
-    top: 48px;
+    left: 44px;
+    top: 3px;
     animation-delay: calc(-400s / 16);
 }
 
 .shootingstar:nth-child(17) {
-    left: 171px;
-    top: 228px;
+    left: 67px;
+    top: 119px;
     animation-delay: calc(-400s / 17);
 }
 
 .shootingstar:nth-child(18) {
-    left: 239px;
-    top: 36px;
+    left: 272px;
+    top: 44px;
     animation-delay: calc(-400s / 18);
 }
 
 .shootingstar:nth-child(19) {
-    left: 274px;
-    top: 87px;
+    left: 156px;
+    top: 163px;
     animation-delay: calc(-400s / 19);
 }
 
 .shootingstar:nth-child(20) {
-    left: 197px;
-    top: 134px;
+    left: 114px;
+    top: 256px;
     animation-delay: calc(-400s / 20);
 }
 
 .shootingstar:nth-child(21) {
-    left: 60px;
-    top: 239px;
+    left: 298px;
+    top: 220px;
     animation-delay: calc(-400s / 21);
 }
 
 .shootingstar:nth-child(22) {
-    left: 75px;
-    top: 157px;
+    left: 122px;
+    top: 67px;
     animation-delay: calc(-400s / 22);
 }
 
 .shootingstar:nth-child(23) {
-    left: 262px;
-    top: 261px;
+    left: 287px;
+    top: 229px;
     animation-delay: calc(-400s / 23);
 }
 
 .shootingstar:nth-child(24) {
-    left: 201px;
-    top: 105px;
+    left: 285px;
+    top: 55px;
     animation-delay: calc(-400s / 24);
 }
 
 .shootingstar:nth-child(25) {
-    left: 212px;
-    top: 273px;
+    left: 188px;
+    top: 228px;
     animation-delay: calc(-400s / 25);
 }
 
 .shootingstar:nth-child(26) {
-    left: 137px;
-    top: 22px;
+    left: 238px;
+    top: 5px;
     animation-delay: calc(-400s / 26);
 }
 
 .shootingstar:nth-child(27) {
-    left: 163px;
-    top: 139px;
+    left: 82px;
+    top: 133px;
     animation-delay: calc(-400s / 27);
 }
 
 .shootingstar:nth-child(28) {
-    left: 157px;
-    top: 259px;
+    left: 31px;
+    top: 67px;
     animation-delay: calc(-400s / 28);
 }
 
 .shootingstar:nth-child(29) {
-    left: 219px;
-    top: 264px;
+    left: 212px;
+    top: 257px;
     animation-delay: calc(-400s / 29);
 }
 
 .shootingstar:nth-child(30) {
-    left: 233px;
-    top: 169px;
+    left: 287px;
+    top: 179px;
     animation-delay: calc(-400s / 30);
 }
 
@@ -2463,7 +2497,8 @@ textarea.input__target {
 
     .identification .input {
         --height: 11vmin;
-        --fs: 0.875rem;
+        --fs: 1rem;
+        --pi: 0.188rem;
     }
 }
 
@@ -2635,7 +2670,7 @@ textarea.input__target {
     }
 
     .identification__front-row .input {
-        max-width: 2.5rem;
+        max-width: 13vmin;
     }
 }
 
