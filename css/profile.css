@@ -1562,7 +1562,7 @@ textarea.input__target {
     margin: 0 0.455em 0 0;
     display: block;
     font-family: "Golos Text";
-    font-size: 0.688rem;
+    font-size: 0.75rem;
     text-align: center;
     font-weight: 500;
     line-height: 1.35;
@@ -1574,6 +1574,7 @@ textarea.input__target {
 @media (min-width: 576px) {
     .offer__percent {
         margin: 0 0 0.273em 0;
+        font-size: 0.688rem;
     }
 }
 
